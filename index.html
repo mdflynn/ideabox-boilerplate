@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Open%20Sans" rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>IdeaBox</title>
   </head>
   <body class="purple-1">
-    <section class="menu purple-4">
-      <h1 class="header-text">IdeaBox</h1>
-    </section>
+      <section class="menu purple-4">
+        <div class="hamburger-menu">
+        </div>
+        <h1 class="header-text">IdeaBox</h1>
+      </section>
+      <div class="dropdown">
+        <h1 class="dropdown-ideabox hidden">IdeaBox</h1>
+        <i class=""></i>
+        <p>Filter Starred Ideas</p>
+        <button class="starred-ideas-button">Show Starred Ideas</button>
+      </div>
     <main class="ideas">
       <section class="idea-form purple-2">
+        <section>
+          <form>
+            <label for="title">Title</label>
+            <input type="text" id="title-text">
+            <label for="body">Body</label>
+            <input type="text" id="body-text">
+            <button class="save-button" type="button">Save</button>
+          </form>
+          <div class="search">
+            <button class="search-button" type="button">Button</button>
+            <input type="text" id="search-bar-text" placeholder="Search Ideas"></input>
+          </div>
+        </section>
       </section>
       <section class="idea-cards">
+        <article class="one-idea-card">
+          <div class="idea-card-header">
+            <i class="">image</i>
+            <i class="">image</i>
+          </div>
+          <div class="idea-card-body">
+            <p class="idea-title">Idea Title</p>
+            <p class="idea-text">Idea body</p>
+          </div>
+          <div class="idea-card-footer">
+            <i class="">Plus sign</i>
+            <p>comment</p>
+          </div>
+        </article>
       </section>
     </main>
   </body>
