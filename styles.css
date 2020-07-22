@@ -11,6 +11,8 @@ html, body {
 
 body {
   display: flex;
+  flex-direction: column;
+
 }
 
 /*=== Background Colors ===*/
@@ -36,10 +38,13 @@ body {
 
 .header-text {
   color: #EAEAF4;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', bold;
   font-weight: bold;
   padding: 20px;
+  display: flex;
+  justify-content: center;
 }
+
 
 .body-text {
   font: 'Open Sans' light;
@@ -49,8 +54,12 @@ body {
 /*=== menu section ===*/
 
 .menu {
-  height: 100%;
-  width: 380px;
+  height: 4.82%;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
 }
 
 /*=== main section ===*/
