@@ -17,6 +17,19 @@ body {
   display: none;
 }
 
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+.form-spacer {
+
+}
+
 
 /*=== Background Colors ===*/
 
