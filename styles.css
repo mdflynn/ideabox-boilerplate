@@ -17,6 +17,33 @@ body {
   display: none;
 }
 
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-spacer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.body-spacer {
+  padding-top: 20px;
+}
+
+.save-button {
+  width: 95%;
+  color: #1F1F3D;
+  background-color: #353567;
+}
+
+/* input {
+  width: 95%;
+} */
+
 
 /*=== Background Colors ===*/
 
@@ -43,7 +70,7 @@ body {
   color: #EAEAF4;
   font-family: 'Open Sans';
   font-weight: bold;
-  padding: 20px;
+  padding: 41px;
 }
 
 .body-text {
@@ -97,8 +124,19 @@ body {
   }
 
   .form-spacer {
-      width: 50px;
+      /* width: 50px; */
   }
+  .title-spacer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  /* form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 
   .icon {
     padding-right: 65px;
