@@ -14,7 +14,7 @@ body {
 }
 
 .hidden {
-  /* display: none; */
+  display: none;
 }
 
 form {
@@ -229,6 +229,14 @@ form {
 
   .filter-idea-text {
     color: #A9AAD2;
+  }
+
+  .header-alignment {
+    display: flex;
+  }
+
+  .hidden {
+    /* display: none; */
   }
 
 }
