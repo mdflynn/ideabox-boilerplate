@@ -95,6 +95,11 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
+  .form-spacer {
+      width: 50px;
+  }
+
   .icon {
     padding-right: 65px;
   }
