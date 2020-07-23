@@ -160,16 +160,27 @@ form {
     justify-content: space-between;
   }
 
+  .idea-card-body {
+    height: 150px;
+  }
+
   .idea-title {
     color: #1F1F3D;
-    padding-left: 10PX;
-    font-family: 'Open Sans' light;
+    padding-left: 10px;
+    padding-top: 13px;
+    font-family: 'Open Sans', bold;
     font-weight: bold;
+    font-size: 125%;
   }
 
   .idea-text {
     color: #1F1F3D;
-    padding-left: 10PX;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    font-size: 120%;
   }
 
   .idea-card-footer {
@@ -182,7 +193,7 @@ form {
 
   .idea-comments {
     color: #E9E9F3;
-    font-family: 'Open Sans', light;
+    font-family: 'Open Sans';
     font-weight: bold;
   }
 
