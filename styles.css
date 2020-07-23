@@ -44,12 +44,16 @@ form {
   width: 95%;
 } */
 
+.search {
+  margin-top: 20px
+}
+
 .search-button{
   background-color: #353567;
   margin-right: 0px;
 }
 
-.search {
+.search-bar-text{
   border: 1px #353567
   border-radius: 2px;
   height:auto;
