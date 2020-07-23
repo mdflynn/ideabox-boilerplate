@@ -14,7 +14,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  /* display: none; */
 }
 
 form {
@@ -195,6 +195,40 @@ form {
     color: #E9E9F3;
     font-family: 'Open Sans';
     font-weight: bold;
+  }
+
+  .dropdown-page {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #1F1F3D;
+  }
+
+  .opaque {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+  }
+
+  .dropdown-ideabox {
+    color: #EAEAF4;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10x;
+  }
+
+  .filter-idea-text {
+    color: #A9AAD2;
   }
 
 }
