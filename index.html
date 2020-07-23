@@ -11,11 +11,20 @@
         <span><img class="icon" src="./assets/menu.svg" height="50" width="50"></i></span>
         <span><h1 class="header-text">IdeaBox</h1></span>
       </nav>
-      <div class="dropdown hidden">
-        <h1 class="dropdown-ideabox">IdeaBox</h1>
-        <i class=""></i>
-        <p>Filter Starred Ideas</p>
-        <button class="starred-ideas-button">Show Starred Ideas</button>
+      <div class="dropdown-page hidden">
+        <div class="dropdown hidden">
+          <div class="header-alignment">
+            <div class="dropdown-header">
+              <span><img class="dropdown-icon" src="./assets/menu-close.svg" height="40" width="40"></i><span>
+            </div>
+            <div>
+              <h1 class="dropdown-ideabox">IdeaBox</h1>
+            </div>
+          </div>
+          <p class="filter-idea-text">Filter Starred Ideas</p>
+          <button class="starred-ideas-button">Show Starred Ideas</button>
+        </div>
+        <div class="opaque">stuff</div>
       </div>
     <main class="ideas">
       <section class="idea-form purple-2">
@@ -42,16 +51,17 @@
       <section class="idea-cards">
         <article class="one-idea-card">
           <div class="idea-card-header">
-            <i class="">image</i>
-            <i class="">image</i>
+            <img class="favorite-image-unsaved" src="./assets/star.svg" height="25" width="25">
+            <img class="delete-image-unsaved" src="./assets/delete.svg" height="25" width="25">
           </div>
           <div class="idea-card-body">
-            <p class="idea-title">Idea Title</p>
-            <p class="idea-text">Idea body</p>
+            <p class="idea-title">Idea title</p>
+            <p class="idea-text">Idea body. Don't ever play yourself.
+              Every chance I get, I water the plants, Lion! Cloth Talk</p>
           </div>
           <div class="idea-card-footer">
-            <i class="">Plus sign</i>
-            <p>comment</p>
+            <img class="comment-image" src="./assets/comment.svg" height="25" width="25">
+            <p class="idea-comments">Comment</p>
           </div>
         </article>
       </section>

@@ -181,4 +181,98 @@ font-weight: lighter;
   .idea-form {
     flex-grow: 1;
   }
+
+  .one-idea-card {
+    border-style: solid;
+    border-width: thin;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .idea-card-header {
+    background: #1F1F3D;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .idea-card-body {
+    height: 150px;
+  }
+
+  .idea-title {
+    color: #1F1F3D;
+    padding-left: 10px;
+    padding-top: 13px;
+    font-family: 'Open Sans', bold;
+    font-weight: bold;
+    font-size: 125%;
+  }
+
+  .idea-text {
+    color: #1F1F3D;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    font-size: 120%;
+  }
+
+  .idea-card-footer {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #5356A4;
+    display: flex;
+    align-items: center;
+  }
+
+  .idea-comments {
+    color: #E9E9F3;
+    font-family: 'Open Sans';
+    font-weight: bold;
+  }
+
+  .dropdown-page {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #1F1F3D;
+  }
+
+  .opaque {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+  }
+
+  .dropdown-ideabox {
+    color: #EAEAF4;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10x;
+  }
+
+  .filter-idea-text {
+    color: #A9AAD2;
+  }
+
+  .header-alignment {
+    display: flex;
+  }
+
+  .hidden {
+    /* display: none; */
+  }
+
 }
