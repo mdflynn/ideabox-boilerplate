@@ -46,6 +46,15 @@ form {
 
 .search-button{
   background-color: #353567;
+  margin-right: 0px;
+}
+
+.search {
+  border: 1px #353567
+  border-radius: 2px;
+  height:auto;
+  width:auto;
+  padding: 2px 23px 2px 30px;
 }
 /*=== Background Colors ===*/
 
