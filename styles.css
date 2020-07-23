@@ -145,4 +145,45 @@ form {
   .idea-form {
     flex-grow: 1;
   }
+
+  .one-idea-card {
+    border-style: solid;
+    border-width: thin;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .idea-card-header {
+    background: #1F1F3D;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .idea-title {
+    color: #1F1F3D;
+    padding-left: 10PX;
+    font-family: 'Open Sans' light;
+    font-weight: bold;
+  }
+
+  .idea-text {
+    color: #1F1F3D;
+    padding-left: 10PX;
+  }
+
+  .idea-card-footer {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #5356A4;
+    display: flex;
+    align-items: center;
+  }
+
+  .idea-comments {
+    color: #E9E9F3;
+    font-family: 'Open Sans', light;
+    font-weight: bold;
+  }
+
 }
