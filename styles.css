@@ -11,9 +11,12 @@ html, body {
 
 body {
   display: flex;
-  flex-direction: column;
-
 }
+
+.hidden {
+  display: none;
+}
+
 
 /*=== Background Colors ===*/
 
@@ -38,13 +41,10 @@ body {
 
 .header-text {
   color: #EAEAF4;
-  font-family: 'Open Sans', bold;
+  font-family: 'Open Sans';
   font-weight: bold;
   padding: 20px;
-  display: flex;
-  justify-content: center;
 }
-
 
 .body-text {
   font: 'Open Sans' light;
@@ -54,12 +54,8 @@ body {
 /*=== menu section ===*/
 
 .menu {
-  height: 4.82%;
-  width: 100%;
-}
-
-.hidden {
-  display: none;
+  height: 100%;
+  width: 380px;
 }
 
 /*=== main section ===*/
@@ -87,13 +83,20 @@ body {
 
   .header-text {
     font-size: 18px;
-    padding: 10px;
+    padding: 10x;
   }
 
   .menu {
     height: 40px;
     text-align: center;
     width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .icon {
+    padding-right: 65px;
   }
 
   .idea-form {
