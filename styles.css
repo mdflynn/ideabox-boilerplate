@@ -13,6 +13,11 @@ body {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
+
 /*=== Background Colors ===*/
 
 .purple-1 {
@@ -78,13 +83,25 @@ body {
 
   .header-text {
     font-size: 18px;
-    padding: 10px;
+    padding: 10x;
   }
 
   .menu {
     height: 40px;
     text-align: center;
     width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .form-spacer {
+      width: 50px;
+  }
+
+  .icon {
+    padding-right: 65px;
   }
 
   .idea-form {
