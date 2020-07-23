@@ -44,7 +44,9 @@ form {
   width: 95%;
 } */
 
-
+.search-button{
+  background-color: #353567;
+}
 /*=== Background Colors ===*/
 
 .purple-1 {
