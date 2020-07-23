@@ -24,7 +24,6 @@ form {
   justify-content: center;
   align-items: center;
 }
-}
 
 .form-spacer {
 
@@ -112,6 +111,13 @@ form {
   .form-spacer {
       width: 50px;
   }
+
+  /* form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 
   .icon {
     padding-right: 65px;
