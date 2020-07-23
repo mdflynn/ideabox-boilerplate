@@ -36,6 +36,8 @@ form {
 
 .save-button {
   width: 95%;
+  color: #1F1F3D;
+  background-color: #353567;
 }
 
 /* input {
