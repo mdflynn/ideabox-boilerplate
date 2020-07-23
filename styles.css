@@ -44,6 +44,42 @@ form {
   width: 95%;
 } */
 
+.search {
+  margin-top: 20px;
+  display: flex;
+}
+
+.search-button{
+  background-color: #353567;
+  border-color: transparent;
+  border-radius:
+  margin-right: 0px;
+  width: 45px;
+  height: 45px;
+}
+
+.search-icon {
+  transform: translateY(2px);
+  width: 22px;
+}
+
+#search-bar-text{
+  border: #353567;
+  border-style: solid;
+  border-width: thin;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 272px;
+  padding: 12px;
+  margin-right: 15px;
+}
+
+::placeholder {
+color:#5356A4;
+font-size: -1.5em;
+font-weight: lighter;
+}
+
 
 /*=== Background Colors ===*/
 
