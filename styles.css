@@ -25,9 +25,22 @@ form {
   align-items: center;
 }
 
-.form-spacer {
-
+.title-spacer {
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
+
+.body-spacer {
+  padding-top: 20px;
+}
+
+.save-button {
+  width: 95%;
+}
+
+/* input {
+  width: 95%;
+} */
 
 
 /*=== Background Colors ===*/
@@ -55,7 +68,7 @@ form {
   color: #EAEAF4;
   font-family: 'Open Sans';
   font-weight: bold;
-  padding: 20px;
+  padding: 41px;
 }
 
 .body-text {
@@ -109,7 +122,11 @@ form {
   }
 
   .form-spacer {
-      width: 50px;
+      /* width: 50px; */
+  }
+  .title-spacer {
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 
   /* form {
