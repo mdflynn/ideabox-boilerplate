@@ -26,18 +26,26 @@ form {
 }
 
 .title-spacer {
+  width: 95%;
   padding-top: 40px;
   padding-bottom: 20px;
 }
 
 .body-spacer {
+  width: 95%;
   padding-top: 20px;
 }
 
 .save-button {
   width: 95%;
-  color: #1F1F3D;
-  background-color: #353567;
+  height: 50px;
+  color: #E9E9F3;
+  background-color: #353667;
+  font-family: 'Open sans';
+  font-weight: bold;
+  font-size: 20px;
+  border-color: #5456A4;
+  border-radius: 3px;
 }
 
 /* input {
@@ -96,7 +104,7 @@ font-weight: lighter;
 }
 
 .purple-4 {
-  background: #1F1F3D;;
+  background: #1F1F3D;
 }
 
 
@@ -111,6 +119,18 @@ font-weight: lighter;
 
 .body-text {
   font: 'Open Sans' light;
+}
+
+.title-text {
+  font-family: 'Open sans';
+  font-weight: bold;
+  color: #1F1F3D;
+}
+
+.body-text {
+  font-family: 'Open sans';
+  font-weight: bold;
+  color: #1F1F3D;
 }
 
 
@@ -135,6 +155,27 @@ font-weight: lighter;
 
 .idea-cards {
   flex-grow: 3;
+}
+
+
+#title-text {
+  width: 100%;
+  height: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border-color: #5456A4;
+}
+
+#body-text {
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border-color: #5456A4;
 }
 
 /*=== media queries ===*/
