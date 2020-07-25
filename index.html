@@ -11,6 +11,10 @@
       <nav class="menu purple-4">
         <span><img class="icon" src="./assets/menu.svg" height="50" width="50"></i></span>
         <span><h1 class="header-text">IdeaBox</h1></span>
+        <div class="desktop-filter">
+          <p class="filter-idea-text1">Filter Starred Ideas</p>
+          <button class="starred-ideas-button1">Show Starred Ideas</button>
+        </div>
       </nav>
       <div class="dropdown-page hidden">
         <div class="dropdown">
@@ -18,20 +22,17 @@
             <div class="dropdown-header">
               <span><img class="dropdown-icon" src="./assets/menu-close.svg" height="40" width="40"></i><span>
             </div>
-            <div>
-              <h1 class="dropdown-ideabox">IdeaBox</h1>
-            </div>
-          </div>
+              <span><h1 class="dropdown-ideabox">IdeaBox</h1></span>
+          </div class="dropdown-header">
           <p class="filter-idea-text">Filter Starred Ideas</p>
           <button class="starred-ideas-button">Show Starred Ideas</button>
         </div>
-        <div class="opaque"></div>
       </div>
     <main class="ideas">
       <section class="idea-form purple-2">
         <section>
           <div class="form-spacer">
-            <form>
+            <form class="form-inputs">
               <div class="title-spacer">
                 <label class="title-text">Title</label>
                 <input type="text" id="title-text">
