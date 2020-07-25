@@ -91,7 +91,9 @@ font-weight: lighter;
   color: #EAEAF4;
   font-family: 'Open Sans';
   font-weight: bold;
-  padding: 41px;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 28px;
 }
 
 
@@ -244,6 +246,10 @@ font-weight: lighter;
   height: 45px;
 }
 
+.icon {
+  display: none;
+}
+
 /*=== media queries ===*/
 
 @media only screen and (max-width: 400px) {
@@ -252,9 +258,11 @@ font-weight: lighter;
 
   }
 
+
   .header-text {
-    font-size: 18px;
+    font-size: 20px;
     padding: 10x;
+    margin-bottom: 13px;
   }
 
   form {
@@ -305,7 +313,9 @@ font-weight: lighter;
     align-items: center; */
 
   .icon {
+    display: unset;
     padding-right: 65px;
+    margin-left: 8px;
   }
 
   .idea-form {
