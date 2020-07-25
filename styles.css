@@ -134,11 +134,10 @@ font-weight: lighter;
 .idea-cards {
   flex-grow: 3;
   display: flex;
+  flex-wrap: wrap;
+
 }
 
-.idea-card-grid {
-  display: flex;
-}
 
 .one-idea-card {
   border-style: solid;
@@ -146,10 +145,7 @@ font-weight: lighter;
   display: flex;
   flex-direction: column;
   margin: 10px;
-}
-
-.iead-card-grid {
-  display: flex;
+  width: 35%;
 }
 
 .idea-card-header {
@@ -178,7 +174,7 @@ font-weight: lighter;
   padding-bottom: 10px;
   font-family: 'Open Sans';
   font-weight: lighter;
-  font-size: 120%;
+  font-size: 1em;
 }
 
 .idea-card-footer {
@@ -229,6 +225,7 @@ font-weight: lighter;
   margin-bottom: 5px
 }
 
+
 /* input {
   width: 95%;
 } */
@@ -259,7 +256,7 @@ font-weight: lighter;
   margin-bottom: 20px;
   height: 50px;
   color: #E9E9F3;
-  background-color: #353667;
+  background-color: #5356A4;
   font-family: 'Open sans';
   font-weight: bold;
   font-size: 20px;
@@ -283,6 +280,7 @@ font-weight: lighter;
   border-width: 1px;
   border-color: #5356A4;
 }
+
 
 
 /*=== media queries ===*/
@@ -330,21 +328,6 @@ font-weight: lighter;
 
   }
 
-  /* .form-spacer {
-      /* width: 50px; */
-
-  /* .title-spacer {
-    padding-top: 40px;
-
-  } */
-
-  /* form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-
   .icon {
     display: unset;
     padding-right: 65px;
@@ -361,6 +344,7 @@ font-weight: lighter;
     display: flex;
     flex-direction: column;
     margin: 10px;
+    width: 100%;
   }
 
   .idea-card-header {
@@ -455,15 +439,15 @@ font-weight: lighter;
     width: 100%;
     margin-top: 10px;
     margin-left: 10px;
-
   }
 
-  /* .hidden {
+   .hidden {
     display: none;
-  } */
+  }
 
   .idea-cards {
     flex-grow: 3;
+    display: unset;
   }
 
   .save-button {
@@ -479,10 +463,6 @@ font-weight: lighter;
     margin-top: 10px;
     margin-bottom: 5px
   }
-
-  /* input {
-    width: 95%;
-  } */
 
   .search {
     margin-top: 20px;
@@ -559,4 +539,8 @@ font-weight: lighter;
   }
   .starred-ideas-button1 {
     display: none;
+  }
+
+  .card-structure {
+    width: 100%;
   }
