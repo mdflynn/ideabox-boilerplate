@@ -268,7 +268,7 @@ font-weight: lighter;
 
 .filter-idea-text1 {
   color: #A9AAD2;
-  font: 'Open Sans';
+  font-family: 'Open Sans';
   font-weight: bold;
   margin-top: 35px;
   margin-bottom: 10px;
