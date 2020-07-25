@@ -52,7 +52,7 @@ form {
   border-width: thin;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-  width: 319px;
+  width: 405px;
   padding: 12px;
 
   color: #5356A4;
@@ -133,6 +133,7 @@ font-weight: lighter;
 
 .idea-cards {
   flex-grow: 3;
+  display: flex;
 }
 
 .idea-card-grid {
@@ -325,7 +326,6 @@ font-weight: lighter;
     border-bottom-right-radius: 2px;
     width: 285px;
     padding: 12px;
-
     color: #5356A4;
 
   }
@@ -458,9 +458,9 @@ font-weight: lighter;
 
   }
 
-  .hidden {
+  /* .hidden {
     display: none;
-  }
+  } */
 
   .idea-cards {
     flex-grow: 3;
