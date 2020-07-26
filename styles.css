@@ -44,8 +44,6 @@ form {
 
   }
 
-
-
 #search-bar-text{
   color: #5356A4;
   width: 100%;
@@ -58,18 +56,16 @@ form {
   border-color: #5456A4;
 }
 
+::placeholder {
+  color:#5356A4;
+  opacity: 1;
+}
+
 .search-icon {
   display: flex;
   justify-content: center;
 }
 
-
-/* ::placeholder {
-color:#5356A4;
-font-size: -1.5em;
-font-weight: lighter;
-}
- */
 
 /*=== Background Colors ===*/
 
@@ -235,10 +231,12 @@ font-weight: lighter;
 } */
 
 .search {
+  width: 88%;
+  padding-top: 20px;
+  padding-left: 0px;
   margin-top: 4%;
   margin-bottom: 4%;
   display: flex;
-  width: 88%;
   justify-content: center;
   align-items: center;
 }
@@ -476,7 +474,7 @@ font-weight: lighter;
     margin-top: 4%;
     margin-bottom: 4%;
     display: flex;
-    width: 88%;
+    width: 95%;
     justify-content: center;
     align-items: center;
 
