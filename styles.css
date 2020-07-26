@@ -44,11 +44,14 @@ form {
 
   }
 
+.search {
+
+}
 
 #search-bar-text{
   border: #353567;
   border-style: solid;
-  border-width: 2px;
+  border-width: thin;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   width: 405px;
@@ -141,7 +144,7 @@ font-weight: lighter;
 
 .one-idea-card {
   border-style: solid;
-  border-width: 2px;
+  border-width: thin;
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -201,7 +204,7 @@ font-weight: lighter;
   margin: 8px 0;
   box-sizing: border-box;
   border-style: solid;
-  border-width: 2px;
+  border-width: medium;
   border-radius: 3px;
   border-color: #5456A4;
 }
@@ -213,7 +216,7 @@ font-weight: lighter;
   margin: 8px 0;
   box-sizing: border-box;
   border-style: solid;
-  border-width: 2px;
+  border-width: thin;
   border-radius: 3px;
   border-color: #5456A4;
 }
@@ -248,7 +251,7 @@ font-weight: lighter;
   border-color: transparent;
   margin-right: 0px;
   width: 45px;
-  height: 48px;
+  height: 45px;
 }
 
 .icon {
@@ -324,7 +327,7 @@ font-weight: lighter;
   #search-bar-text{
     border: #353567;
     border-style: solid;
-    border-width: 2px;
+    border-width: thin;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     width: 285px;
@@ -360,7 +363,7 @@ font-weight: lighter;
 
   .one-idea-card {
     border-style: solid;
-    border-width: 2px;
+    border-width: thin;
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -532,7 +535,7 @@ font-weight: lighter;
     margin: 8px 0;
     box-sizing: border-box;
     border-style: solid;
-    border-width: 2px;
+    border-width: thin;
     border-radius: 3px;
     border-color: #5456A4;
   }
@@ -544,7 +547,7 @@ font-weight: lighter;
     margin: 8px 0;
     box-sizing: border-box;
     border-style: solid;
-    border-width: 2px;
+    border-width: thin;
     border-radius: 3px;
     border-color: #5456A4;
   }
