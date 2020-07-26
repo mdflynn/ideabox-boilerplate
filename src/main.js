@@ -19,10 +19,11 @@ function addInput() {
   bodyInput.innerText = ideaBodyText;
 }
 
+
 function saveIdea() {
-  var newIdea = `<article class="one-idea-card">
+    var newIdea = `<article class="one-idea-card">
     <div class="idea-card-header">
-      <img class="favorite-image-unsaved" src="./assets/star-active.svg" height="25" width="25">
+      <img class="favorite-image-unsaved" src="./assets/star.svg" height="25" width="25">
       <img class="delete-image-unsaved" src="./assets/delete.svg" height="25" width="25">
     </div>
     <div class="idea-card-body">
@@ -34,6 +35,8 @@ function saveIdea() {
       <p class="idea-comments">Comment</p>
     </div>
   </article>`;
-  ideaGrid.innerHTML += newIdea
-  // savedIdeas.push()
+
+  if (titleInput.value !== "" && bodyInput.value !== "") {
+  ideaGrid.innerHTML += newIdea;
+  }
 }
