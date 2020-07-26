@@ -19,5 +19,5 @@ function addInput() {
 
 function saveIdea() {
   document.getElementsByClassName(".favorite-image-unsaved").src="./assets/star-active.svg";
-  savedIdeas.push()
+  // savedIdeas.push()
 }
