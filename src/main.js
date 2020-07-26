@@ -38,5 +38,10 @@ function saveIdea() {
 
   if (titleInput.value !== "" && bodyInput.value !== "") {
   ideaGrid.innerHTML += newIdea;
+  clearInputs()
   }
+}
+function clearInputs() {
+  document.getElementById("title-text").value = "";
+  document.getElementById("body-text").value = "";
 }
