@@ -44,27 +44,28 @@ form {
 
   }
 
-
-
 #search-bar-text{
-  border: #353567;
-  border-style: solid;
-  border-width: thin;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  width: 405px;
-  padding: 12px;
-
   color: #5356A4;
-
+  width: 100%;
+  height: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-color: #5456A4;
 }
 
-/* ::placeholder {
-color:#5356A4;
-font-size: -1.5em;
-font-weight: lighter;
+::placeholder {
+  color:#5356A4;
+  opacity: 1;
 }
- */
+
+.search-icon {
+  display: flex;
+  justify-content: center;
+}
+
 
 /*=== Background Colors ===*/
 
@@ -146,10 +147,6 @@ font-weight: lighter;
   display: flex;
   flex-direction: column;
   margin: 10px;
-}
-
-.iead-card-grid {
-  display: flex;
 }
 
 .idea-card-header {
@@ -234,18 +231,24 @@ font-weight: lighter;
 } */
 
 .search {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 88%;
+  padding-top: 20px;
+  padding-left: 0px;
+  margin-top: 4%;
+  margin-bottom: 4%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .search-button{
   background-color: #353567;
   border-color: transparent;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
   margin-right: 0px;
   width: 45px;
-  height: 45px;
+  height: 75%;
 }
 
 .icon {
@@ -293,7 +296,6 @@ font-weight: lighter;
 
   }
 
-
   .header-text {
     font-size: 20px;
     padding: 10x;
@@ -319,31 +321,15 @@ font-weight: lighter;
   }
 
   #search-bar-text{
-    border: #353567;
-    border-style: solid;
-    border-width: thin;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    width: 285px;
-    padding: 12px;
-    color: #5356A4;
-
-  }
-
-  /* .form-spacer {
-      /* width: 50px; */
-
-  /* .title-spacer {
-    padding-top: 40px;
-
-  } */
-
-  /* form {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
+    height: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-color: #5456A4;
+  }
 
   .icon {
     display: unset;
@@ -458,9 +444,9 @@ font-weight: lighter;
 
   }
 
-  /* .hidden {
+  .hidden {
     display: none;
-  } */
+  }
 
   .idea-cards {
     flex-grow: 3;
@@ -485,23 +471,28 @@ font-weight: lighter;
   } */
 
   .search {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 4%;
+    margin-bottom: 4%;
     display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+
   }
 
   .search-button{
     background-color: #353567;
     border-color: transparent;
-    border-radius:
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     margin-right: 0px;
     width: 45px;
-    height: 45px;
+    height: 75%;
   }
 
   .search-icon {
-    transform: translateY(2px);
-    width: 22px;
+    display: flex;
+    justify-content: center;
   }
 
   .starred-ideas-button {
