@@ -61,7 +61,8 @@ form {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
   border-color: #5456A4;
 
 }
@@ -329,7 +330,8 @@ font-weight: lighter;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     border-color: #5456A4;
     /* border: #353567;
     border-style: solid;
