@@ -47,7 +47,7 @@ form {
 
 
 #search-bar-text{
-  border: #353567;
+  /* border: #353567;
   border-style: solid;
   border-width: thin;
   border-top-right-radius: 2px;
@@ -55,7 +55,14 @@ form {
   width: 405px;
   padding: 12px;
 
-  color: #5356A4;
+  color: #5356A4; */
+  width: 100%;
+  height: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border-color: #5456A4;
 
 }
 
@@ -148,10 +155,6 @@ font-weight: lighter;
   margin: 10px;
 }
 
-.iead-card-grid {
-  display: flex;
-}
-
 .idea-card-header {
   background: #1F1F3D;
   display: flex;
@@ -234,10 +237,12 @@ font-weight: lighter;
 } */
 
 .search {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 4%;
+  margin-bottom: 4%;
   display: flex;
+  width: 88%;
   justify-content: center;
+  align-items: center;
 }
 
 .search-button{
@@ -319,31 +324,22 @@ font-weight: lighter;
   }
 
   #search-bar-text{
-    border: #353567;
+    width: 100%;
+    height: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border-color: #5456A4;
+    /* border: #353567;
     border-style: solid;
     border-width: thin;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     width: 285px;
     padding: 12px;
-    color: #5356A4;
-
+    color: #5356A4; */
   }
-
-  /* .form-spacer {
-      /* width: 50px; */
-
-  /* .title-spacer {
-    padding-top: 40px;
-
-  } */
-
-  /* form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 
   .icon {
     display: unset;
@@ -458,9 +454,9 @@ font-weight: lighter;
 
   }
 
-  /* .hidden {
+  .hidden {
     display: none;
-  } */
+  }
 
   .idea-cards {
     flex-grow: 3;
@@ -485,9 +481,13 @@ font-weight: lighter;
   } */
 
   .search {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 4%;
+    margin-bottom: 4%;
     display: flex;
+    width: 88%;
+    justify-content: center;
+    align-items: center;
+
   }
 
   .search-button{
