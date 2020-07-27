@@ -217,7 +217,7 @@ form {
   border-color: #5456A4;
 }
 
-.save-button {
+.save-button{
   width: 88%;
   height: 50px;
   color: #E9E9F3;
@@ -228,22 +228,9 @@ form {
   border-color: #5456A4;
   border-radius: 3px;
   margin-top: 10px;
-  margin-bottom: 5px
+  margin-bottom: 5px;
+  opacity: 0.5;
 }
-
-.save-button, .save-button.disabled:hover {
-    opacity: 0.6;
-    cursor: none;
-}
-
-.save-button:hover{
-    background-color: #EAEAF4;
-    color: black;
-}
-
-/* input {
-  width: 95%;
-} */
 
 .search {
   width: 88%;
@@ -467,7 +454,7 @@ form {
     flex-grow: 3;
   }
 
-  .save-button {
+  .save-button{
     width: 95%;
     height: 50px;
     color: #E9E9F3;
@@ -478,12 +465,9 @@ form {
     border-color: #5456A4;
     border-radius: 3px;
     margin-top: 10px;
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    opacity: 0.5;
   }
-
-  /* input {
-    width: 95%;
-  } */
 
   .search {
     margin-top: 4%;

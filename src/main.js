@@ -5,16 +5,12 @@ var favoriteIdea = document.querySelector(".favorite-image-unsaved");
 var titleInput = document.querySelector("#title-text");
 var bodyInput = document.querySelector("#body-text");
 var ideaGrid = document.querySelector(".idea-card-grid");
-
 // var savedIdeas = [];
 
 favoriteIdea.addEventListener("click", addInput);
 saveButton.addEventListener("click", saveIdea);
-titleInput.addEventListener("keyup", disableSaveButton);
-bodyInput.addEventListener("keyip", disableSaveButton);
-
-
-// window.onload = disableButton()
+titleInput.addEventListener("keyup", enableSaveButton);
+bodyInput.addEventListener("keyup", enableSaveButton);
 
 function addInput() {
   titleInput.value;
@@ -24,7 +20,8 @@ function addInput() {
   var currentIdea = new Idea(titleInput.value, bodyInput.value);
 }
 
-function saveIdea() {
+function saveIdea(event) {
+    event.preventDefault()
     var newIdea = `<article class="one-idea-card">
     <div class="idea-card-header">
       <img class="favorite-image-unsaved" src="./assets/star.svg" height="25" width="25">
@@ -51,8 +48,16 @@ function clearInputs() {
   document.getElementById("body-text").value = "";
 }
 
-function disableSaveButton() {
-  if (titleInput.value && bodyInput.value) {
+function enableSaveButton() {
+  if (titleInput.length !== 0 && bodyInput.length !== 0) {
     saveButton.disabled = false;
+    saveButton.style.opacity = 1;
+  } else {
+    disableSaveButton()
   }
+}
+
+function disableSaveButton() {
+    saveButton.disabled = true;
+    saveButton.style.opacity = 0.5;
 }
