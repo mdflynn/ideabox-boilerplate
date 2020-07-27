@@ -17,6 +17,7 @@ body {
   display: none;
 }
 
+
 form {
   width: 50%;
   display: flex;
@@ -228,6 +229,16 @@ form {
   border-radius: 3px;
   margin-top: 10px;
   margin-bottom: 5px
+}
+
+.save-button, .save-button.disabled:hover {
+    opacity: 0.6;
+    cursor: none;
+}
+
+.save-button:hover{
+    background-color: #EAEAF4;
+    color: black;
 }
 
 /* input {
