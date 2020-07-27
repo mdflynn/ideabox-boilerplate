@@ -232,6 +232,10 @@ form {
   opacity: 0.5;
 }
 
+.save-button:disabled{
+  cursor: none;
+}
+
 .search {
   width: 88%;
   padding-top: 20px;
