@@ -5,10 +5,13 @@ var favoriteIdea = document.querySelector(".favorite-image-unsaved");
 var titleInput = document.querySelector("#title-text");
 var bodyInput = document.querySelector("#body-text");
 var ideaGrid = document.querySelector(".idea-card-grid");
+var deleteButton = document.querySelector(".delete-image-unsaved");
 // var savedIdeas = [];
+
 
 favoriteIdea.addEventListener("click", addInput);
 saveButton.addEventListener("click", saveIdea);
+ideaGrid.addEventListener("click", deleteIdea);
 titleInput.addEventListener("keyup", enableSaveButton);
 bodyInput.addEventListener("keyup", enableSaveButton);
 
@@ -60,4 +63,16 @@ function enableSaveButton() {
 function disableSaveButton() {
     saveButton.disabled = true;
     saveButton.style.opacity = 0.5;
+}
+
+function deleteIdea(event) {
+  var findIdea = event.target.closest(".idea-cards");
+  var removeIdea = event.target.id;
+  for(var i = 0; i < ideaGrid.length; i++) {
+    if (ideaGrid[i].id == removeIdea) {
+      ideaGrid.splice(i, 1);
+    }
+    saveIdea();
+
+  }
 }
