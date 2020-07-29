@@ -6,32 +6,53 @@ var titleInput = document.querySelector("#title-text");
 var bodyInput = document.querySelector("#body-text");
 var ideaGrid = document.querySelector(".idea-card-grid");
 var deleteButton = document.querySelector(".delete-image-unsaved");
+var ideaCardDisplaySec = document.querySelector(".idea-cards");
 var savedIdeas = [];
 var currentIdea ;
 
 
-favoriteIdea.addEventListener("click", addIdea);
+// favoriteIdea.addEventListener("click", addIdea);
 saveButton.addEventListener("click", addIdea);
-ideaGrid.addEventListener("click", deleteIdea);
+// ideaGrid.addEventListener("click", deleteIdea);
 titleInput.addEventListener("keyup", enableSaveButton);
 bodyInput.addEventListener("keyup", enableSaveButton);
 
-function addIdea() {
-  console.log("hi");
-  var one = titleInput.value;
-  var two = bodyInput.value;
-  one.innerText = title;
-  two.innerText = body;
-  currentIdea = new Idea(one.innerText, two.innerText);
-  savedIdeas.push(currentIdea);
-  console.log(savedIdeas);
+function addIdea(event) {
+event.preventDefault();
+ideaBodyText.innerText = titleInput.value;
+ideaBodyText.innerText = bodyInput.value;
+currentIdea = new Idea(ideaBodyText.innerText, ideaBodyText.innerText)
+console.log(bodyInput.value)
+savedIdeas.push(currentIdea);
+displayNewIdea(currentIdea);
+// clearInputs();
 }
+// var one = titleInput.value;
+// var two = bodyInput.value;
+// // one.innerText = title;
+// // two.innerText = body;
+// console.log(one);
+// currentIdea = new Idea (one.value, two.value);
+// savedIdeas.push(currentIdea);
+// // ideaCard();
+// displayNewIdea();
+// clearInputs();
+// }
 
-function saveIdea(event) {
-    event.preventDefault()
-    var ideaData = "";
+// function ideaCard() {
+//   ideaCardText.innerText = titleInput.value;
+//   console.log(currentIdea.title);
+//   ideaBodyText.innerText = bodyInput.value;
+// }
+
+function displayNewIdea(currentIdea) {
+    console.log(bodyInput.value)
+    ideaGrid.innerHTML = "";
+    console.log(bodyInput.value)
       for (var i = 0; i < savedIdeas.length; i++) {
-     ideaData += `<article class="one-idea-card" id="${savedIdeas[i].id}">
+    console.log(ideaBodyText.innerText);
+     ideaGrid.innerHTML +=
+     `<article class="one-idea-card" id="${savedIdeas[i].id}">
     <div class="idea-card-header">
       <img class="favorite-image-unsaved" src="./assets/star.svg" height="25" width="25">
       <img class="delete-image-unsaved" src="./assets/delete.svg" id="delete-image" height="25" width="25">
@@ -44,12 +65,9 @@ function saveIdea(event) {
       <img class="comment-image" src="./assets/comment.svg" height="25" width="25">
       <p class="idea-comments">Comment</p>
     </div>
-  </article>`;
-
-  // if (titleInput.value !== "" && bodyInput.value !== "") {
-
-     } ideaGrid.innerHTML += ideaData;
- clearInputs()
+  </article>`
+  }
+  console.log(bodyInput.value)
 }
 
 function clearInputs() {
@@ -62,23 +80,11 @@ function enableSaveButton() {
     saveButton.disabled = false;
     saveButton.style.opacity = 1;
   } else {
-    disableSaveButton()
+    disableSaveButton();
   }
 }
 
 function disableSaveButton() {
     saveButton.disabled = true;
     saveButton.style.opacity = 0.5;
-}
-
-function deleteIdea(event) {
-  var findIdea = event.target.closest(".idea-cards");
-  var removeIdea = event.target.id;
-  for(var i = 0; i < ideaGrid.length; i++) {
-    if (ideaGrid[i].id == removeIdea) {
-      ideaGrid.splice(i, 1);
-    }
-    saveIdea();
-
-  }
 }
