@@ -19,38 +19,18 @@ bodyInput.addEventListener("keyup", enableSaveButton);
 
 function addIdea(event) {
 event.preventDefault();
-ideaBodyText.innerText = titleInput.value;
-ideaBodyText.innerText = bodyInput.value;
-currentIdea = new Idea(ideaBodyText.innerText, ideaBodyText.innerText)
-console.log(bodyInput.value)
+currentIdea = new Idea(titleInput.value , bodyInput.value);
 savedIdeas.push(currentIdea);
-displayNewIdea(currentIdea);
-// clearInputs();
+ideaCardText.innerText = currentIdea.title;
+ideaBodyText.innerText = currentIdea.body;
+displayNewIdea();
+clearInputs();
 }
-// var one = titleInput.value;
-// var two = bodyInput.value;
-// // one.innerText = title;
-// // two.innerText = body;
-// console.log(one);
-// currentIdea = new Idea (one.value, two.value);
-// savedIdeas.push(currentIdea);
-// // ideaCard();
-// displayNewIdea();
-// clearInputs();
-// }
-
-// function ideaCard() {
-//   ideaCardText.innerText = titleInput.value;
-//   console.log(currentIdea.title);
-//   ideaBodyText.innerText = bodyInput.value;
-// }
 
 function displayNewIdea(currentIdea) {
-    console.log(bodyInput.value)
+
     ideaGrid.innerHTML = "";
-    console.log(bodyInput.value)
       for (var i = 0; i < savedIdeas.length; i++) {
-    console.log(ideaBodyText.innerText);
      ideaGrid.innerHTML +=
      `<article class="one-idea-card" id="${savedIdeas[i].id}">
     <div class="idea-card-header">
@@ -67,7 +47,6 @@ function displayNewIdea(currentIdea) {
     </div>
   </article>`
   }
-  console.log(bodyInput.value)
 }
 
 function clearInputs() {
