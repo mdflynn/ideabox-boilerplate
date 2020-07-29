@@ -203,6 +203,7 @@ form {
   border-width: thin;
   border-radius: 3px;
   border-color: #5456A4;
+  resize: none;
 }
 
 #body-text {
@@ -215,6 +216,7 @@ form {
   border-width: thin;
   border-radius: 3px;
   border-color: #5456A4;
+  resize: none;
 }
 
 .save-button{
@@ -527,6 +529,7 @@ form {
     border-width: thin;
     border-radius: 3px;
     border-color: #5456A4;
+    resize: none;
   }
 
   #body-text {
@@ -539,6 +542,7 @@ form {
     border-width: thin;
     border-radius: 3px;
     border-color: #5456A4;
+    resize: none;
   }
 
   .body-spacer {
