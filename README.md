@@ -43,23 +43,21 @@ Our team will develop/utilize skills relying on JS, HTML and CSS to create funct
 ## Functionality Showcase
 
 <p align="center">I </br>
-  <img width="460" height="300" src="./readme-imgs/" alt="">
+  <img width="460" height="300" src="https://media.giphy.com/media/chVeXr5MnlD1h1ODVt/giphy.gif" alt="Desktop view">
 </p>
 
-<p align="center">Image of Form View </br>
-  <img width="460" height="300" src="./readme-imgs/" alt="">
+<p align="center">Image of Mobile View </br>
+  <img width="230" height="300" src="https://media.giphy.com/media/WRuPwEQMHBic0J2CFY/giphy.gif" alt="Mobile view">
 </p>
 
-<p align="center">Image of Poster from Form Inputs</br>
-  <img width="460" height="300" src="./readme-imgs/" alt="">
+<p align="center">Desktop Deletion View</br>
+  <img width="460" height="300" src="https://media.giphy.com/media/l5JHpBU72KdlBthRoT/giphy.gif" alt="Deletion of ideas view">
 </p>
 
-<p align="center">Image of Saved Posters Collection </br>
-  <img width="460" height="300" src="./readme-imgs/" alt="S">
+<p align="center">Mobile Deletion View </br>
+  <img width="230" height="300" src="https://media.giphy.com/media/IbrbiUFr9Hmu6IaA4Z/giphy.gif" alt="Mobile deletion view">
 </p>
 
-<p align="center">Journey Through the Site</br>
-  <img width="460" height="300" src="" alt="">
-</p>
+
 
 Project spec & rubric can be found [here](https://frontend.turing.io/projects/module-1/ideabox-group.html)
