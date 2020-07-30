@@ -11,11 +11,17 @@ var savedIdeas = [];
 var currentIdea ;
 
 
-// favoriteIdea.addEventListener("click", addIdea);
+ideaGrid.addEventListener("click", handleEvents);
 saveButton.addEventListener("click", addIdea);
-// deleteButton.addEventListener("click", deleteIdea);
 titleInput.addEventListener("keyup", enableSaveButton);
 bodyInput.addEventListener("keyup", enableSaveButton);
+
+function handleEvents(event) {
+  event.preventDefault();
+  if (event.target.id === "delete-image") {
+    deleteIdea(event);
+  }
+}
 
 function addIdea(event) {
 event.preventDefault();
@@ -65,11 +71,5 @@ function disableSaveButton() {
 }
 
 function deleteIdea(event) {
-  var ideaToDelete = getElementById(currentIdea.id);
-  console.log("hats");
-
-  for (var i = 0; i < savedIdeas.length; i++) {
-    savedIdeas.splice(event.target.id, 1);
-    document.getElementById(event.target.id).remove();
+  event.target.closest(".one-idea-card").remove();
   }
-}
