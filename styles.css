@@ -385,6 +385,7 @@ form {
     font-family: 'Open Sans';
     font-weight: lighter;
     font-size: 120%;
+    overflow: auto;
   }
 
   .idea-card-footer {
@@ -562,4 +563,9 @@ form {
   }
   .starred-ideas-button1 {
     display: none;
+  }
+
+  .idea-card-grid {
+    display: flex;
+    flex-direction: column;
   }

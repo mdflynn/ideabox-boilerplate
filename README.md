@@ -43,11 +43,12 @@ Our team will develop/utilize skills relying on JS, HTML and CSS to create funct
 ## Functionality Showcase
 
 <p align="center">I </br>
-  <img width="460" height="300" src="./readme-imgs/" alt="">
+  <img width="460" height="300" src="https://media.giphy.com/media/chVeXr5MnlD1h1ODVt/giphy.gif/" alt="Desktop view">
 </p>
 
-<p align="center">Image of Form View </br>
-  <img width="460" height="300" src="./readme-imgs/" alt="">
+<p align="center">Image of Mobile View </br>
+  <img width="230" height="300" src="https://media.giphy.com/media/chVeXr5MnlD1h1ODVt/giphy.gif
+https://media.giphy.com/media/WRuPwEQMHBic0J2CFY/giphy.gif/" alt="Mobile view">
 </p>
 
 <p align="center">Image of Poster from Form Inputs</br>
