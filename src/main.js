@@ -1,7 +1,7 @@
 var saveButton = document.querySelector(".save-button");
 var ideaCardText = document.querySelector(".idea-title");
 var ideaBodyText = document.querySelector(".idea-text");
-var favoriteIdea = document.querySelector(".favorite-image-unsaved");
+var starredIdea = document.querySelector(".favorite-image-unsaved");
 var titleInput = document.querySelector("#title-text");
 var bodyInput = document.querySelector("#body-text");
 var ideaGrid = document.querySelector(".idea-card-grid");
@@ -11,42 +11,47 @@ var savedIdeas = [];
 var currentIdea ;
 
 
-// favoriteIdea.addEventListener("click", addIdea);
+ideaGrid.addEventListener("click", handleEvents);
 saveButton.addEventListener("click", addIdea);
-// ideaGrid.addEventListener("click", deleteIdea);
 titleInput.addEventListener("keyup", enableSaveButton);
 bodyInput.addEventListener("keyup", enableSaveButton);
+
+function handleEvents(event) {
+  event.preventDefault();
+  if (event.target.id === "delete-image") {
+    deleteIdea(event);
+  }
+  if (event.target.id === ".favorite-image-unsaved") {
+    favoriteIdea(event);
+  }
+}
 
 function addIdea(event) {
 event.preventDefault();
 currentIdea = new Idea(titleInput.value , bodyInput.value);
 savedIdeas.push(currentIdea);
-ideaCardText.innerText = currentIdea.title;
-ideaBodyText.innerText = currentIdea.body;
-displayNewIdea();
+displayNewIdea(currentIdea);
 clearInputs();
 }
 
 function displayNewIdea(currentIdea) {
 
-    ideaGrid.innerHTML = "";
-      for (var i = 0; i < savedIdeas.length; i++) {
-     ideaGrid.innerHTML +=
-     `<article class="one-idea-card" id="${savedIdeas[i].id}">
+     ideaGrid.insertAdjacentHTML("afterbegin",
+     `<article class="one-idea-card" id="${currentIdea.id}">
     <div class="idea-card-header">
       <img class="favorite-image-unsaved" src="./assets/star.svg" height="25" width="25">
       <img class="delete-image-unsaved" src="./assets/delete.svg" id="delete-image" height="25" width="25">
     </div>
     <div class="idea-card-body">
-      <p class="idea-title">${savedIdeas[i].title}</p>
-      <p class="idea-text">${savedIdeas[i].body}</p>
+      <p class="idea-title">${currentIdea.title}</p>
+      <p class="idea-text">${currentIdea.body}</p>
     </div>
     <div class="idea-card-footer">
       <img class="comment-image" src="./assets/comment.svg" height="25" width="25">
       <p class="idea-comments">Comment</p>
     </div>
   </article>`
-  }
+  )
 }
 
 function clearInputs() {
@@ -66,4 +71,12 @@ function enableSaveButton() {
 function disableSaveButton() {
     saveButton.disabled = true;
     saveButton.style.opacity = 0.5;
+}
+
+function deleteIdea(event) {
+  event.target.closest(".one-idea-card").remove();
+  }
+
+function favoriteIdea(event) {
+  event.target.closest(".one-idea-card")
 }
