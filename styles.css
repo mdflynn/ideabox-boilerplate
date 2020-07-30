@@ -118,7 +118,7 @@ form {
 
 .menu {
   height: 100%;
-  width: 300px;
+  width: 25%;
 }
 
 /*=== main section ===*/
@@ -270,7 +270,7 @@ form {
   margin-bottom: 20px;
   height: 50px;
   color: #E9E9F3;
-  background-color: #353667;
+  background-color: #5356A4;
   font-family: 'Open sans';
   font-weight: bold;
   font-size: 20px;
@@ -321,7 +321,7 @@ form {
   .menu {
     height: 40px;
     text-align: center;
-    width: 100%;
+    width: 25%;
     display: flex;
     align-items: center;
     padding-top: 10px;
@@ -365,6 +365,7 @@ form {
 
   .idea-card-body {
     height: 150px;
+    overflow: scroll;
   }
 
   .idea-title {
