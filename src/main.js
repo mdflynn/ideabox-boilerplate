@@ -1,7 +1,7 @@
 var saveButton = document.querySelector(".save-button");
 var ideaCardText = document.querySelector(".idea-title");
 var ideaBodyText = document.querySelector(".idea-text");
-var favoriteIdea = document.querySelector(".favorite-image-unsaved");
+var starredIdea = document.querySelector(".favorite-image-unsaved");
 var titleInput = document.querySelector("#title-text");
 var bodyInput = document.querySelector("#body-text");
 var ideaGrid = document.querySelector(".idea-card-grid");
@@ -20,6 +20,9 @@ function handleEvents(event) {
   event.preventDefault();
   if (event.target.id === "delete-image") {
     deleteIdea(event);
+  }
+  if (event.target.id === ".favorite-image-unsaved") {
+    favoriteIdea(event);
   }
 }
 
@@ -73,3 +76,7 @@ function disableSaveButton() {
 function deleteIdea(event) {
   event.target.closest(".one-idea-card").remove();
   }
+
+function favoriteIdea(event) {
+  event.target.closest(".one-idea-card")
+}
